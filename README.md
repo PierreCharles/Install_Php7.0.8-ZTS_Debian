@@ -6,7 +6,7 @@ These are a set of bash scripts for building and running PHP 7 (CLI and FPM) on 
 
 - `install.sh` sets up PHP-FPM by moving configuration files into their correct locations in `/usr/local/php7` and enables the `php7-fpm` service and adds it to the startup sequence.
 
-- `pthread.sh` (optional) install and configure pthread extention using pecl. The script will copy the php.ini file to " cli " then integrate the extension.
+- `pthread.sh` (optional) install and configure pthread extention using pecl. The script will copy the php.ini file to "cli" `/usr/local/php7/lib/php-cli.ini` then integrate the extension.
 
 ## Usage
 
@@ -14,6 +14,7 @@ These are a set of bash scripts for building and running PHP 7 (CLI and FPM) on 
 	$ cd Install_Php7.0.8-ZTS_Debian8
 	$ ./configure.sh
 	$ ./install.sh
+	$ ./pthreads **(Optional)** (Just press enter to choose the default config)
 
 The PHP-FPM can be operated using the `php7-fpm` init script:
 
