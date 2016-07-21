@@ -1,14 +1,18 @@
 # Install_Php7.0.8-ZTS_Debian8
 
-##Install
+##Clone and Install
 
-git clone https://github.com/PierreCharles/Install_Php7.0.8-ZTS_Debian8.git
+	git clone https://github.com/PierreCharles/Install_Php7.0.8-ZTS_Debian8.git
 
-./install.sh
+	./configure.sh
+
+	./install.sh
 
 #Information
 
-The execution time of the script is approximately 30 minutes to 1 hour
+Php-fpm listening on socket : `/var/run/php7.0-fpm.sock``
+
+The execution time of the script is approximately 30 minutes to 1 hour.
 
 Configuration :
 
