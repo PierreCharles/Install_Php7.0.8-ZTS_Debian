@@ -8,6 +8,9 @@ These are a set of bash scripts for building and running PHP 7 (CLI and FPM) on 
 
 - `pthread.sh` (optional) install and configure pthread extention using pecl. The script will copy the php.ini file to "cli" `/usr/local/php7/lib/php-cli.ini` then integrate the extension.
 
+- `remove.sh` remove all php and config of the system.
+
+
 ## Usage
 
 	$ git clone https://github.com/PierreCharles/Install_Php7.0.8-ZTS_Debian8.git
@@ -45,6 +48,18 @@ All PHP configuration files are stored under `/usr/local/php7`:
 while the Debian init script is added to:
 
 	/etc/init.d/php7-fpm
+
+
+## .bashrc
+
+You can add an export into your bashrc file : `/root/.bashrc`
+	
+	export PATH=$PATH:/usr/local/php7/bin
+	export PATH=$PATH:/usr/local/php7/sbin
+	
+And refresh it :
+
+	source /root/.bashrc
 
 ## Configuration :
 
