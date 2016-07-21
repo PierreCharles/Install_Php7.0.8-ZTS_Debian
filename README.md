@@ -12,7 +12,7 @@ The execution time of the script is approximately 30 minutes to 1 hour
 
 Configuration :
 
-	--prefix=/usr/local/php7 \
+		--prefix=/usr/local/php7 \
         --with-config-file-scan-dir=/usr/local/php7/etc/conf.d \
         --enable-bcmath \
         --enable-calendar \
