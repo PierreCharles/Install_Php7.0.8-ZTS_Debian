@@ -1,4 +1,4 @@
-## Installation of php7.0.8 (ZTS) on Debian 8
+## Installation of php7.0.8 (ZTS) on Debian
 
 These are a set of bash scripts for building and running PHP 7 (CLI and FPM) on Debian based Linux distributions compiling for using pthreads extention to use workers.
 

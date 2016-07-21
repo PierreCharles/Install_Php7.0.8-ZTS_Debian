@@ -4,6 +4,7 @@ cd "$(dirname "$0")"
 # Dependencies
 apt-get update
 apt-get install -y \
+    wget \
     build-essential \
     pkg-config \
     git-core \
