@@ -5,7 +5,7 @@ These are a set of bash scripts for building and running PHP 7 (CLI and FPM) on 
 - `configure.sh` installs the necessary build dependencies and the latest development version of PHP with CLI and FPM server APIs (SAPI) from the latest PHP 7 branch of https://github.com/php/php-src. Version 7.0.8.
 
 - `install.sh` sets up PHP-FPM by moving configuration files into their correct locations in `/usr/local/php7` and enables the `php7-fpm` service and adds it to the startup sequence.
-- 
+
 - `pthread.sh` (optional) install and configure pthread extention using pecl. The script will copy the php.ini file to " cli " then integrate the extension.
 
 ## Usage
@@ -45,7 +45,7 @@ while the Debian init script is added to:
 
 	/etc/init.d/php7-fpm
 
-Configuration :
+## Configuration :
 
 		--prefix=/usr/local/php7 \
         --with-config-file-scan-dir=/usr/local/php7/etc/conf.d \
